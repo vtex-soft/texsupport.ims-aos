@@ -3,7 +3,7 @@
 %% Packages
 \RequirePackage{amsthm,amsmath,amsfonts,amssymb}
 \RequirePackage[numbers]{natbib}
-%\RequirePackage[authoryear]{natbib} %% uncomment this for author-year bibliography
+%\RequirePackage[authoryear]{natbib}%% uncomment this for author-year citations
 \RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
 \RequirePackage{graphicx}
 
@@ -17,12 +17,12 @@
 %\numberwithin{equation}{section}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
-%% For Axiom, Claim, Corollary, Hypothezis, %%
+%% For Axiom, Claim, Corollary, Hypothesis, %%
 %% Lemma, Theorem, Proposition              %%
 %% use \theoremstyle{plain}                 %%
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\theoremstyle{plain}
+\theoremstyle{plain}
 \newtheorem{axiom}{Axiom}
 \newtheorem{claim}[axiom]{Claim}
 \newtheorem{theorem}{Theorem}[section]
@@ -53,13 +53,13 @@
 %\thankstext{T1}{A sample additional note to the title.}
 
 \begin{aug}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%Only one address is permitted per author. %%
-%%Only division, organization and e-mail is %%
-%%included in the address.                  %%
-%%Additional information can be included in %%
-%%the Acknowledgments section if necessary. %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Only one address is permitted per author. %%
+%% Only division, organization and e-mail is %%
+%% included in the address.                  %%
+%% Additional information can be included in %%
+%% the Acknowledgments section if necessary. %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \author[A]{\fnms{First} \snm{Author}\ead[label=e1]{first@somewhere.com}},
 \author[B]{\fnms{Second} \snm{Author}\ead[label=e2,mark]{second@somewhere.com}}
 \and
@@ -90,7 +90,7 @@ generates can show you how to produce a simple document of
 your own.
 \end{abstract}
 
-\begin{keyword}[class=MSC2020]
+\begin{keyword}[class=MSC]
 \kwd[Primary ]{00X00}
 \kwd{00X00}
 \kwd[; secondary ]{00X00}
@@ -433,9 +433,14 @@ The second author was supported in part by NIH Grant ???????????.
 \end{funding}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Supplementary Material, if any, should   %%
-%% be provided in {supplement} environment  %%
-%% with title and short description.        %%
+%% Supplementary Material, including data   %%
+%% sets and code, should be provided in     %%
+%% {supplement} environment with title      %%
+%% and short description. It cannot be      %%
+%% available exclusively as external link.  %%
+%% All Supplementary Material must be       %%
+%% available to the reader on Project       %%
+%% Euclid with the published article.       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{supplement}
 \stitle{Title of Supplement A}
