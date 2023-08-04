@@ -2,7 +2,7 @@
 
 %% Packages
 \RequirePackage{amsthm,amsmath,amsfonts,amssymb}
-\RequirePackage[numbers]{natbib}
+\RequirePackage[numbers,sort&compress]{natbib}
 %\RequirePackage[authoryear]{natbib}%% uncomment this for author-year citations
 \RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
 \RequirePackage{graphicx}
@@ -189,6 +189,13 @@ colon or parentheses---like this.
 
 Generating an ellipsis \ldots\ with the right spacing
 around the periods requires a special command.
+
+\subsection{Citation}
+Only include in the reference list entries for which there are text citations,
+and make sure all citations are included in the reference list.
+Simple cite: \cite{r1}.
+Multiple bibliography items cite: \cite{r1,r2,r3,r4}.
+Citing bibliography with object: \cite{r1}, Theorem 1.
 
 \section{Fonts}
 Please use text fonts in text mode, e.g.:
