@@ -196,6 +196,12 @@ Simple cite: \cite{r1}.
 Multiple bibliography items cite: \cite{r1,r2,r3,r4}.
 Citing bibliography with object: \cite{r1}, Theorem 1.
 
+\subsection[Bibliography: use of et al.]{Bibliography: use of et al}
+Journal style does not allow ``et al.'' in the reference list unless a reference
+has more than 9 authors. Please check the original source and provide the full
+author list if there are 9 or fewer authors, or the first 9 authors followed by
+``et al.'' if there are more than 9 authors.
+
 \section{Fonts}
 Please use text fonts in text mode, e.g.:
 \begin{itemize}
@@ -460,7 +466,7 @@ The second author was supported in part by NIH Grant ???????????.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
 %%                                                         %%
-%%  imsart-???.bst  will be used to                        %%
+%%  spr-ims-???.bst  will be used to                       %%
 %%  create a .BBL file for submission.                     %%
 %%                                                         %%
 %%  Note that the displayed Bibliography will not          %%
@@ -471,10 +477,12 @@ The second author was supported in part by NIH Grant ???????????.
 %%                                                         %%
 %%  Use \cite{...} to cite references in text.             %%
 %%                                                         %%
+%%  List all authors when there are 9 or fewer;            %%
+%%  use "et al." starting at 10 authors.                   %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% if your bibliography is in bibtex format, uncomment commands:
-%\bibliographystyle{imsart-number} % Style BST file (imsart-number.bst or imsart-nameyear.bst)
+%\bibliographystyle{spr-ims-number} % Style BST file (spr-ims-number.bst or spr-ims-nameyear.bst)
 %\bibliography{bibliography}       % Bibliography file (usually '*.bib')
 
 %% or include bibliography directly:
